@@ -1,6 +1,4 @@
-/* vorbis.h
- * ices input plugin to read vorbis files as PCM
- *
+/* metadata.h
  * Copyright (c) 2001 Brendan Cully
  *
  * This program is free software; you can redistribute it and/or
@@ -19,13 +17,5 @@
  *
  */
 
-#ifndef IN_VORBIS_H
-#define IN_VORBIS_H
-
-#include "definitions.h"
-
-#include <vorbis/vorbisfile.h>
-
-int ices_vorbis_open (input_stream_t* self);
-
-#endif
+/* Public function declarations */
+void ices_metadata_set (input_stream_t* source);
